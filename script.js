@@ -6,7 +6,6 @@ const adviceText = document.querySelector(".advice_txt")
 
 
 btn.addEventListener ('click', ()=>{
-
     console.log("click")
     fetchadvice();
 })
@@ -14,10 +13,10 @@ btn.addEventListener ('click', ()=>{
 const fetchadvice = async () =>{
 
 try{
-let response = await fetch("https://api.adviceslip.com/advice");
-let info = await response.json()
-let id = info.slip.id
-let advice = info.slip.advice
+const response = await fetch("https://api.adviceslip.com/advice");
+const info = await response.json()
+const id = info.slip.id
+const advice = info.slip.advice
 
 
 number.innerHTML = `Advice # ${id}`

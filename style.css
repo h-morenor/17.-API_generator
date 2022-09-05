@@ -18,10 +18,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 
 main {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,9 +33,6 @@ main {
 }
 
 .btn {
-  background-image: url(/images/icon-dice.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
